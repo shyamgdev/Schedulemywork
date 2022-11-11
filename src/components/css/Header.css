@@ -1,0 +1,93 @@
+#header {
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  color: var(--header-color);
+  background-color: var(--header-background);
+  z-index: 999;
+}
+
+#header-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#header-left, #header-center, #header-right {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#header-left {
+  justify-content: left;
+/*   flex: 1 1 50%; */
+}
+
+#header-menu {
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+#header-center {
+  justify-content: center;
+/*   flex: 1 1 100%; */
+}
+
+#header-searchbar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: var(--header-searchbar-background);
+}
+
+#header-searchbar input {
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  color: var(--color);
+  background-color: transparent;
+}
+
+#header-searchbar-btn {
+  height: 100%;
+  padding: 6px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#header-right {
+  justify-content: right;
+  flex: 1 1 20%;
+}
+
+.header-right-icon {
+  cursor: pointer;
+}
+
+.header-right-icon:not(:last-child) {
+  margin-right: 1rem;
+}

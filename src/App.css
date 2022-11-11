@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+  background-color: rgba(57, 54, 54, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  border-radius: 11px;
+  background-color: #393636;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+html,
+body,
+#root {
+  /* width: 100%; */
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  color: var(--color);
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+*[disabled] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin-top: var(--header-height);
+  padding-top: 20px;
+  padding-left: calc(var(--sidebar-width) + 20px);
+}
+
+body[minisidebar="true"] main {
+  padding-left: calc(var(--miniSidebar-width) + 20px);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#snackbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  bottom: -100px;
+  width: fit-content;
+  height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #000;
+  visibility: hidden;
+  animation: snackbarAnim 2s 2 alternate;
+  z-index: 1000;
+}
+
+/* #snackbar a {
+  color: #fff;
+} */
+
+@keyframes snackbarAnim {
+
+  20%,
+  100% {
+    opacity: 1;
+    transform: translate(0px, -150px);
+    visibility: visible;
+  }
+
+  0% {
+    opacity: 0.2;
+    visibility: visible;
+  }
+
+  5% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+
+  10% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,17 @@
+#trashWork {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+#trashWork-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: calc(100% - 20px);
+  height: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}

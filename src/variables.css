@@ -1,0 +1,45 @@
+html {
+/*   APP */
+  --color: #000;
+  --background: #fff;
+  --hover-color: #deeefc;
+/*   HEADER */
+  --header-height: 60px;
+  --header-color: #fff;
+  --header-background: #595bd3;
+  --header-searchbar-background: #deeefc;
+/*   SIDEBAR */
+  --default-sidebar-width: 250px;
+  --sidebar-width: var(--default-sidebar-width);
+  --sidebar-item-height: 3rem;
+  --sidebar-item-background: rgba(1, 206, 244, 0.2);
+  --sidebar-item-background-hover: var(--hover-color);
+  --sidebar-item-background-active: rgba(1, 206, 244, 0.2);
+  --sidebar-item-icon-width: 60px;
+/*   MINISIDEBAR */
+  --miniSidebar-width: 70px;
+/*   WORKCARD */
+  --workCard-item: 4;
+  --workCard-background: #deeefc;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1140px) {
+  html {
+    --workCard-item: 3;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  html {
+    --workCard-item: 2;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    --workCard-item: 1;
+    --app-main-content-items-gap: 0px;
+  }
+}
