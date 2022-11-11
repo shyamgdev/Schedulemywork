@@ -2,6 +2,9 @@
   "name": "schedulemywork",
   "version": "0.1.0",
   "private": true,
+  "description": "Schedule your work with Schedulemywork. Schedulemywork - Google keep clone with React js",
+  "keywords": [ "todo list", "Google keep", "schedulemywork", "keep clone", "keep notes", "add notes", "add work", "schedule work" ],
+  "author": "Shyam Gupta",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
