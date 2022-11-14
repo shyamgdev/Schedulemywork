@@ -1,7 +1,14 @@
 {
-  "short_name": "Schedulemywork",
   "name": "Schedulemywork",
+  "short_name": "Schedulemywork",
+  "description": "Schedule your work with Schedulemywork. Schedulemywork - Google keep clone with React js",
   "icons": [
+    {
+      "src": "logo/maskable_icon.png",
+      "sizes": "any",
+      "type": "image/x-icon",
+      "purpose": "maskable"
+    },
     {
       "src": "favicon/favicon.ico",
       "sizes": "48x48",
@@ -28,8 +35,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "id": "/",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "theme_color": "#595bd3",
   "background_color": "#ffffff"
 }
