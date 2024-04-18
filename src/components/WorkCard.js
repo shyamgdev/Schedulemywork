@@ -36,7 +36,7 @@ export default function WorkCard(props) {
         <h1 className="workCard-title">{props.title === "" && props.description === "" ? "Empty work" : props.title}</h1>
         <p className="workCard-description">{props.description}</p>
       </div>
-      {isHover && !props.trash &&
+      {!props.trash &&
         <>
           <div style={{ top: '10px' }} className="workCard-icon workCard-pin" onClick={() => { pin(props.id); }} title="Unpin work"><PinIcon /></div>
 
